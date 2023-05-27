@@ -1,0 +1,194 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Fraunces', serif; */
+}
+
+.parent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6ecdd;
+}
+
+.my-project {
+    width: 600px;
+    height: 417px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 0;
+}
+
+.my-project .asma {
+    width: 50%;
+}
+
+.my-project .asma .img {
+    height: 100%;
+}
+
+.image1 {
+    display: block;
+}
+
+.image2 {
+    display: none;
+}
+
+img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+}
+
+.my-project .mehdi {
+    width: 50%;
+    padding: 30px;
+}
+
+.my-project .mehdi .first {
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+
+.my-project .mehdi h1 {
+    width: 80%;
+    font-weight: 700;
+    line-height: 0.9;
+    margin-top: 13px;
+    margin-bottom: 30px;
+}
+
+.my-project .mehdi :nth-child(3) {
+    font-size: 14px;
+    width: 80%;
+    line-height: 1.5;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 25px;
+}
+
+.mehdi .price {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.mehdi .price p {
+    color: hsl(228, 12%, 48%);
+    font-size: 10px;
+    text-decoration-line: line-through;
+}
+
+.mehdi .price span {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+button {
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(159, 34%, 30%);
+    transition-duration: .5s;
+}
+
+@media (max-width:650px) {
+    .parent {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-project {
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .my-project .asma {
+        width: 100%;
+    }
+
+    .my-project .mehdi {
+        width: 100%;
+        padding: 20px;
+    }
+
+    img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        height: 100%;
+        border-top-right-radius: 10px;
+    }
+
+    .image1 {
+        display: none;
+    }
+
+    .image2 {
+        display: block;
+    }
+
+    .my-project .mehdi h1 {
+        width: 100%;
+    }
+
+    .mehdi .price p {
+        font-size: 16px;
+    }
+
+    .my-project .mehdi :nth-child(3) {
+        font-size: 14px;
+        width: 90%;
+        line-height: 1.5;
+        color: hsl(228, 12%, 48%);
+        margin-bottom: 15px;
+    }
+
+    .mehdi .price {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
